@@ -6,9 +6,9 @@
 #
 # CAVEATS
 #
-# * requires a bash with /dev/tcp enabled. Older debians/Ubuntus disabled /dev/tcp.
-# * does not handle multi-bulk replies.
-# * does not allow configuration of redis host or port
+# - requires a bash with /dev/tcp enabled. Older debians/Ubuntus disabled /dev/tcp.
+# - does not handle multi-bulk replies.
+# - does not allow configuration of redis host or port
 #
 # EXIT VALUES
 #
