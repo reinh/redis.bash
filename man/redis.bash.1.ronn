@@ -1,0 +1,51 @@
+redis.bash(1) -- a Redis client in Bash
+=====================================
+
+SYNOPSIS
+--------
+
+`redis.bash` <ARGS>
+
+DESCRIPTION
+-----------
+
+**redis.bash** is a [Redis](http://redis.io/) client written in (almost) pure bash.
+
+CAVEATS
+-------
+
+* requires a bash with /dev/tcp enabled.
+* does not (yet) handle multi-bulk replies.
+* does not (yet) allow configuration of redis host or port
+
+TODO
+----
+
+* multi-bulk replies
+* manpage
+* TESTS
+
+
+EXIT VALUES
+-----------
+
+  * 0: 
+    Success
+
+  * 1:
+    Redis error
+
+  * 2: 
+    Unknown response
+
+LICENSE
+-------
+
+MIT, see [LICENSE](https://github.com/reinh/redis.bash/blob/master/LICENSE)
+
+COPYRIGHT
+------------
+
+redis.bash is Copyright (C) 2011 Rein Henrichs http://reinh.com
+
+- Rein Henrichs: <reinh@reinh.com>
