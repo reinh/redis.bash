@@ -13,6 +13,6 @@ CAVEATS
 EXIT VALUES
 -----------
 
-0:: Success
-1:: Redis error
-2:: Unknown response
+- 0: Success
+- 1: Redis error
+- 2: Unknown response
