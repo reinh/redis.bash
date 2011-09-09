@@ -1,7 +1,7 @@
 redis.bash - A Redis client
 ===========================
 
-usage: redis.bash <ARGS>
+usage: redis.bash \<ARGS\>
 
 CAVEATS
 -------
