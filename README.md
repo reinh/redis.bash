@@ -16,3 +16,19 @@ EXIT VALUES
 - 0: Success
 - 1: Redis error
 - 2: Unknown response
+
+TODO
+----
+
+- multi-bulk replies
+- manpage
+
+LICENSE
+-------
+
+MIT, see LICENSE
+
+CONTRIBUTORS
+------------
+
+- Rein Henrichs: <reinh@reinh.com>
