@@ -22,6 +22,7 @@ TODO
 
 - multi-bulk replies
 - manpage
+- TESTS
 
 LICENSE
 -------
