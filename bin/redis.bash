@@ -3,6 +3,18 @@
 # redis.bash - A Redis client
 #
 # usage: redis.bash <ARGS>
+#
+# CAVEATS
+#
+# * requires a bash with /dev/tcp enabled. Older debians/Ubuntus disabled /dev/tcp.
+# * does not handle multi-bulk replies.
+# * does not allow configuration of redis host or port
+#
+# EXIT VALUES
+#
+# 0: Success
+# 1: Redis error
+# 2: Unknown response
 
 CRLF="\r\n"
 
@@ -27,6 +39,9 @@ case $response in
         echo "${response#-}" >&2
         exit 1
         ;;
+    :*) # Integer
+        echo "${response#:}"
+        ;;
     \$*) # Bulk reply
         nchars="${response#\$}"
         nchars="${nchars%\r}"
@@ -34,7 +49,8 @@ case $response in
         echo $response
         ;;
     *) # net yet handled
-        echo "$response"
+        echo "ERR - Unknown response\n" >&2
+        exit 2
         ;;
 esac
 
